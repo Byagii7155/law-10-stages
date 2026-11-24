@@ -8,7 +8,7 @@ const STAGES = [
     kicker: "Хэрэг бүртгэлтийн шат",
     phase: "mordoo",
     media: {
-      src: "assets/03-hereg-burtgel.png",
+      src: "assets/03-hereg-burtgel.png.jpg",
       alt: "Хэрэг бүртгэлт — мөрдөгч ба иргэний уулзалт, баримт бичгийн шат",
       caption: "Хэрэг бүртгэлтийн үе шат."
     },
