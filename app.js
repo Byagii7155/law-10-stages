@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   "use strict";
 
   var timeline = document.getElementById("timeline");
@@ -374,9 +374,9 @@
   apply();
   onScroll();
 
-  var countEl = document.querySelector(".hero-meta .pill b");
-  if (countEl) {
-    var total = STAGES.reduce(function (sum, s) { return sum + s.points.length; }, 0);
-    countEl.textContent = total;
-  }
+  var ruleCountEl = document.querySelector(".hero-meta .pill:nth-child(2) b");
+  if (ruleCountEl) {
+    var totalRules = STAGES.reduce(function (sum, s) { return sum + s.points.length; }, 0);
+    ruleCountEl.textContent = totalRules;
+}
 })();
