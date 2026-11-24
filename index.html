@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Өмгөөлөгчийн оролцооны 10 үе шат — Эрүүгийн хэрэг хянан шийдвэрлэх тухай хууль</title>
+  <meta name="description" content="Эрүүгийн хэрэг хянан шийдвэрлэх тухай хуулийн хүрээнд өмгөөлөгчийн оролцооны үе шат бүрийн эрх, хүсэлт, гомдол, оролцооны ажиллагаа.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Монгол Улсын Эрүүгийн хэрэг хянан шийдвэрлэх тухай хууль</p>
+      <h1>Өмгөөлөгчийн оролцооны <span>10 үе шат</span></h1>
+      <p class="lead">
+        Хэрэг бүртгэлтээс эхлэн ял оногдуулах хүртэлх процессын үе шат бүрд өмгөөлөгчийн
+        хэрэгжүүлэх эрх, гаргах хүсэлт, гомдол болон оролцооны ажиллагааг дэс дараатай,
+        товч тодорхой харуулав.
+      </p>
+      <div class="hero-meta">
+        <span class="pill"><b>10</b> үе шат</span>
+        <span class="pill"><b>75</b> эрх, ажиллагаа</span>
+        <span class="pill">Хайлт · Шүүлтүүр · Хурдан шилжилт</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="wrap">
+      <div class="toolbar-row">
+        <div class="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5L21 21"/></svg>
+          <input id="search" type="search" autocomplete="off" placeholder="Үе шат, эрх, хүсэлтээр хайх… ( / товч)" aria-label="Хайлт">
+          <button id="clearSearch" class="clear" type="button" aria-label="Хайлтыг цэвэрлэх" hidden>&times;</button>
+        </div>
+        <div class="chips" id="chips" role="tablist" aria-label="Үе шатны бүлэг">
+          <button class="chip is-active" data-phase="all" role="tab" aria-selected="true">Бүгд</button>
+          <button class="chip" data-phase="mordoo" role="tab" aria-selected="false">Мөрдөн байцаалт <span>01–06</span></button>
+          <button class="chip" data-phase="shuuh" role="tab" aria-selected="false">Шүүх <span>07–10</span></button>
+        </div>
+      </div>
+
+      <nav class="stepper" id="stepper" aria-label="Үе шатны цэс"></nav>
+
+      <p class="result" id="result" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <main class="wrap">
+    <section class="timeline" id="timeline" aria-label="Процессын үе шатууд"></section>
+    <p class="empty" id="empty" hidden>
+      Таны хайлтад тохирох үе шат олдсонгүй. Өөр түлхүүр үгээр хайж үзнэ үү.
+    </p>
+
+    <div class="outro">
+      <div class="outro-rule"></div>
+      <p>Дээрх 10 үе шат нь хэрэг бүртгэлтээс эхлэн ял оногдуулах хүртэлх процессын дарааллыг хамарна.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Эрүүгийн хэрэг хянан шийдвэрлэх тухай хууль · Өмгөөлөгчийн оролцооны лавлах</p>
+      <p class="muted">Энэхүү лавлах нь мэдээлэл, сургалтын зорилготой бөгөөд хууль зүйн дүгнэлт болохгүй.</p>
+      <p class="muted">Ишлэл: <a href="https://legalinfo.mn/mn/detail?lawId=12694" target="_blank" rel="noopener">Эрүүгийн хэрэг хянан шийдвэрлэх тухай хууль</a> (2017, шинэчилсэн найруулга; 2025 оны 06 дугаар сарын 27-ны өдрийн өөрчлөлтийг оруулсан).</p>
+      <p class="muted">Зөвхөн эх сурвалжаас тулгаж баталгаажсан зүйл, хэсгийн дугаарыг харуулсан; баталгаажаагүй дугаарыг оруулаагүй.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Дээшээ">↑</button>
+
+  <script src="stages.js"></script>
+  <script src="illustrations.js"></script>
+  <script src="citations.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
